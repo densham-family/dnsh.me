@@ -20,7 +20,7 @@ class RegisteredUserController extends Controller
      */
     public function create(Request $request)
     {
-        if (! $request->has('password') || $request->input('password') !== config('auth.register_password')) {
+        if (app()->environment('production') && $request->input('password') !== config('auth.register_password')) {
             throw new AuthorizationException;
         }
 
