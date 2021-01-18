@@ -9,7 +9,7 @@
         <div class="w-2/3 mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
-                    <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                    <div class="shadow overflow-scroll border-b border-gray-200 sm:rounded-lg">
                         <table class="min-w-full divide-y divide-gray-200">
                             <thead class="bg-gray-50">
                                 <tr>
