@@ -11,6 +11,8 @@ class Link extends Model
 
     protected $guarded = [];
 
+    protected $appends = ['url'];
+
     public function url()
     {
         if ($this->type === 'track') {
