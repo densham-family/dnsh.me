@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::domain(config('api.domain'))->group(function () {
-    Route::middleware('auth:api')->get('/shorten', function (Request $request) {
+    Route::get('/shorten', function (Request $request) {
         $request->validate([
             'target' => ['required', 'url'],
             'type'   => ['required'],
