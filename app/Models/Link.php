@@ -13,6 +13,11 @@ class Link extends Model
 
     protected $appends = ['url'];
 
+    public function getUrlAttribute()
+    {
+        return $this->url();
+    }
+
     public function url()
     {
         if ($this->type === 'track') {
