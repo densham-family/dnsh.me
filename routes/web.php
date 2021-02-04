@@ -17,8 +17,6 @@ use Illuminate\Support\Str;
 |
 */
 
-Route::redirect('/', '/login');
-
 Route::get('/dashboard', function (Request $request) {
     $links = Link::query()
         ->when($request->has('sort_by'), function (Builder $query) use ($request) {
